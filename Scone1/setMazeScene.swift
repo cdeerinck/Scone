@@ -53,7 +53,6 @@ func setMazeScene(scene: SCNScene, node geometryNode:inout SCNNode, view sceneVi
                     maxY = y
                     maxDepth = curDepth
                 }
-                dumper(x,y)
             }
         }
         return (maxX, maxY)
