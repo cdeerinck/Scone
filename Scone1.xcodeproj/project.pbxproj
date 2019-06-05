@@ -70,8 +70,8 @@
 			children = (
 				13CC718E21D08A8500DC12BE /* AppDelegate.swift */,
 				13CC719021D08A8500DC12BE /* ViewController.swift */,
-				130A97AF22A076DA007925B2 /* setPieScene.swift */,
 				130A97A322A07080007925B2 /* setCubeScene.swift */,
+				130A97AF22A076DA007925B2 /* setPieScene.swift */,
 				130A97AB22A0764C007925B2 /* setFallsScene.swift */,
 				130A97AD22A07682007925B2 /* setTreeScene.swift */,
 				130A97A722A075DA007925B2 /* setMazeScene.swift */,

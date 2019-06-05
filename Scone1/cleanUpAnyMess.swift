@@ -10,8 +10,17 @@ import Foundation
 import UIKit
 import SceneKit
 
-func cleanupAnyMess (scene: SCNScene, node:inout SCNNode)  {
-    node.removeFromParentNode()
-    node = SCNNode()
-    scene.background.contents = []
+func cleanupAnyMess (scene: inout SCNScene)  {
+    cleanup(scene, scene.rootNode)
+    scene.background.contents = nil
+    //scene = SCNScene()
+}
+
+func cleanup (_ scene: SCNScene, _ node:SCNNode) {
+    while node.childNodes.count > 0 {
+        cleanup(scene, node.childNodes.first!)
+    }
+    if node != scene.rootNode {
+        node.removeFromParentNode()
+    }
 }
